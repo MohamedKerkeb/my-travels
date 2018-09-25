@@ -2,15 +2,18 @@
 
 import React from "react";
 
-const Travels = props => (
+const Travels = ({ destination, country, photo, distance}) => (
 	<figure>
-		<h1>{props.destination}</h1>
-		<p>{props.country}</p>
+		<h1>{destination}</h1>
+		<p>{country}</p>
 		<figcaption>
-			<img src={props.photo} alt={props.destination} />
-			<p>{props.distance}</p>
+			<img src={photo} alt={destination} />
+			<p>{distance}</p>
 		</figcaption>
 	</figure>
-);
+	);
 
 export default Travels;
+
+
+
